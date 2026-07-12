@@ -1,0 +1,19 @@
+{
+  "name": "febrilidade",
+  "version": "1.0.0",
+  "description": "Sistema de módulos para profissionais da saúde em construção.",
+  "homepage": "https://github.com/pepeeteless/febrilidade#readme",
+  "bugs": {
+    "url": "https://github.com/pepeeteless/febrilidade/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepeeteless/febrilidade.git"
+  },
+  "license": "ISC",
+  "author": "pepe and ramon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
