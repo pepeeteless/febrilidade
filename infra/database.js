@@ -13,7 +13,6 @@ async function query(queryObject) {
   try {
     const connected = await client.connect();
     const result = await client.query(queryObject);
-    console.log("connected");
     return result;
   } catch (error) {
     console.error(error);
