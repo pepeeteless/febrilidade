@@ -14,14 +14,19 @@
   "author": "pepe and ramon",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "services:up": "docker compose -f infra/compose.yaml up -d",
+    "services:down": "docker compose -f infra/compose.yaml down"
   },
   "devDependencies": {
     "prettier": "3.9.5"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "next": "^16.2.10",
+    "pg": "^8.22.0",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "zod": "^4.4.3"
   }
 }
