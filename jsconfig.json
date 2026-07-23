@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules"]
+}
