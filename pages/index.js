@@ -1,6 +1,6 @@
 import styles from "./Home.module.css";
 import Image from "next/image";
-import ramon_picado from "../public/imgs/ramon_picado.jpg";
+import baianage from "../public/imgs/baianage.png";
 import { useState } from "react";
 
 export default function Home() {
@@ -10,16 +10,19 @@ export default function Home() {
       <div className={styles.card}>
         <h1 className={styles.title}>🚧 Página em Construção 🚧</h1>
 
-        <p className={styles.subtitle}>Aguarde, miserável maldito...</p>
+        <p className={styles.subtitle}>
+          O Bosta do ramon agr só ta de bombinhagem msm, nem doente ta mais...
+        </p>
 
         <div className={styles.spinner}></div>
 
         <p className={styles.small}>
-          Enquanto isso, o Ramon tá com febre e empenhado.
+          Enquanto isso, o Ramon viciado em Black Ops 2, viadinho... Vamo tira o
+          carro dele pra nada se fode, Olha que medonhage ⬇️ kkkkkkkkkkk
           <br></br>
           <Image
-            src={ramon_picado}
-            alt="Ramon picado"
+            src={baianage}
+            alt="Gol Baiano"
             width={300}
             className={styles.image}
           />
@@ -32,11 +35,11 @@ export default function Home() {
             setCount(novoCount);
 
             alert(
-              `Parabéns! Mandou ${novoCount} pontos de saúde para o Ramon...`,
+              `Parabéns! Mandou ${novoCount} de vergonha na cara para Bombinhamon...`,
             );
           }}
         >
-          Não clique aqui
+          Aperte nessa bosta.
         </button>
       </div>
     </main>
