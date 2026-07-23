@@ -1,7 +1,9 @@
 import { Client } from "pg";
 import { env } from "../config/env";
 
-async function query(queryObject) {
+let client;
+
+async function getNewClient() {
   const client = new Client({
     user: env.POSTGRES_USER,
     host: env.POSTGRES_HOST,
@@ -10,7 +12,12 @@ async function query(queryObject) {
     password: env.POSTGRES_PASSWORD,
   });
 
+  return client;
+}
+
+async function query(queryObject) {
   try {
+    client = await getNewClient();
     const connected = await client.connect();
     const result = await client.query(queryObject);
     return result;
@@ -24,6 +31,9 @@ async function query(queryObject) {
   }
 }
 
-const database = { query };
+const database = {
+  query,
+  getNewClient,
+};
 
 export default database;
