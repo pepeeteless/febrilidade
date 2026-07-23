@@ -19,7 +19,8 @@
     "services:down": "docker compose -f infra/compose.yaml down"
   },
   "devDependencies": {
-    "prettier": "3.9.5"
+    "prettier": "3.9.5",
+    "jest": "^30.4.2"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
