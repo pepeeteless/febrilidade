@@ -23,3 +23,7 @@ async function query(queryObject) {
     }
   }
 }
+
+const database = { query };
+
+export default database;
