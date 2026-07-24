@@ -11,14 +11,13 @@ async function getNewClient() {
     database: env.POSTGRES_DB,
     password: env.POSTGRES_PASSWORD,
   });
-
+  await client.connect();
   return client;
 }
 
 async function query(queryObject) {
+  const client = await getNewClient();
   try {
-    client = await getNewClient();
-    const connected = await client.connect();
     const result = await client.query(queryObject);
     return result;
   } catch (error) {

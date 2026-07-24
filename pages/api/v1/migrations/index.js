@@ -33,11 +33,9 @@ export default async function migrations(request, response) {
     if (request.method == "POST") {
       const migratedMigrations = await runner(defaultMigrationOptions);
       if (migratedMigrations.length > 0) {
-        return response.status(201).json({
-          migrated: migratedMigrations.length,
-        });
+        return response.status(201).json({ migratedMigrations });
       }
-      return response.status(200).end();
+      return response.status(200).json([]);
     }
   } catch (error) {
     console.error(error);
