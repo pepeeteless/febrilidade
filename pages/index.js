@@ -1,32 +1,55 @@
 import styles from "./Home.module.css";
 import Image from "next/image";
-import baianage from "../public/imgs/baianage.png";
+import ramon_picado from "../public/imgs/ramon_picado.png";
 import { useState } from "react";
 
 export default function Home() {
   const [count, setCount] = useState(0);
+
   return (
     <main className={styles.container}>
       <div className={styles.card}>
-        <h1 className={styles.title}>🚧 Página em Construção 🚧</h1>
+        <h1 className={styles.title}>
+          ✅ Infraestrutura Finalizada Lixo Imundo!
+        </h1>
 
         <p className={styles.subtitle}>
-          O Bosta do ramon agr só ta de bombinhagem msm, nem doente ta mais...
+          Atenção, seu bosta! A infraestrutura do app ja ta pronta porram.
+          <br />
+          <br />
+          Agora não tem mais desculpa, larga de ser um mizeravel que so fala e
+          nao faz! gay lixo. 🚀
         </p>
+        <br />
 
         <div className={styles.spinner}></div>
 
         <p className={styles.small}>
-          Enquanto isso, o Ramon viciado em Black Ops 2, viadinho... Vamo tira o
-          carro dele pra nada se fode, Olha que medonhage ⬇️ kkkkkkkkkkk
-          <br></br>
-          <Image
-            src={baianage}
-            alt="Gol Baiano"
-            width={300}
-            className={styles.image}
-          />
+          Docker? ✔️
+          <br />
+          Banco? ✔️
+          <br />
+          CI/CD? ✔️
+          <br />
+          Lint? ✔️
+          <br />
+          Testes? ✔️
+          <br />
+          <br />
+          O único serviço que ainda está offline é o desenvolvedor.
+          <br />
+          <br />
+          Foto do cidadão para facilitar a identificação:
         </p>
+
+        <Image
+          src={ramon_picado}
+          alt="Ramon"
+          width={300}
+          className={styles.image}
+        />
+        <br />
+        <br />
 
         <button
           className={styles.button}
@@ -35,12 +58,16 @@ export default function Home() {
             setCount(novoCount);
 
             alert(
-              `Parabéns! Mandou ${novoCount} de vergonha na cara para Bombinhamon...`,
+              `🔔 Lembrete #${novoCount}: Bunda mole, a infraestrutura já está pronta. Vamo começar porra!`,
             );
           }}
         >
-          Aperte nessa bosta.
+          Enviar cobrança 📢
         </button>
+
+        <p className={styles.small}>
+          Nivel de pau-no-cuzisse: <strong>{count}</strong>
+        </p>
       </div>
     </main>
   );
