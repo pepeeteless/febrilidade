@@ -20,10 +20,6 @@ export default function Home() {
           Agora não tem mais desculpa, larga de ser um mizeravel que so fala e
           nao faz! gay lixo. 🚀
         </p>
-        <br />
-
-        <div className={styles.spinner}></div>
-
         <p className={styles.small}>
           Docker? ✔️
           <br />
@@ -35,13 +31,10 @@ export default function Home() {
           <br />
           Testes? ✔️
           <br />
-          <br />
-          O único serviço que ainda está offline é o desenvolvedor.
-          <br />
-          <br />
-          Foto do cidadão para facilitar a identificação:
+          <br />O único serviço que ainda está offline é o desenvolvedor.
+          <br /> Foto do cidadão para facilitar a identificação
+          <br /> ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
         </p>
-
         <Image
           src={ramon_picado}
           alt="Ramon"
