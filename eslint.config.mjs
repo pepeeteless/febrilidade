@@ -7,7 +7,7 @@ import { defineConfig } from "eslint/config";
 
 export default defineConfig([
   {
-    ignores: [".next/**", "node_modules/**", "coverage/**", "dist/**"],
+    ignores: [".next/**", "node_modules/**", "dist/**", "coverage/**"],
   },
 
   {
@@ -18,11 +18,20 @@ export default defineConfig([
         ...globals.node,
       },
     },
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
   },
 
   {
-    files: ["**/*.{jsx,js,mjs,cjs}"],
+    files: ["**/*.{js,mjs,cjs,jsx}"],
     ...pluginReact.configs.flat.recommended,
+    rules: {
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-uses-react": "off",
+    },
   },
 
   {
