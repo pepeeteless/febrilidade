@@ -39,7 +39,7 @@ export default function Home() {
           O único serviço que ainda está offline é o desenvolvedor.
           <br />
           <br />
-          Segue a foto do cidadão para facilitar a identificação:
+          Foto do cidadão para facilitar a identificação:
         </p>
 
         <Image
